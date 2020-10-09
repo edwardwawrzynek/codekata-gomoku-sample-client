@@ -5,6 +5,13 @@ package app
  */
 
 class AI {
+    /**
+     * Given a board, decide what move to make
+     * the board is passed as a Board object. To get the contents of the cell x, y, check state.board[x][y],
+     * which is either GamePlayer.NONE, GamePlayer.US, or GamePlayer.THEM
+     *
+     * Return your move as a Pair(x, y)
+     */
     fun makeMove(state: Board): Pair<Int, Int> {
         // find the first legal move
         for(x in 0 until 15) {
